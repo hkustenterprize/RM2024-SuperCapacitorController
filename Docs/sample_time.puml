@@ -1,0 +1,24 @@
+@startuml
+clock   "MOS_A_H"   as C0 with period 500
+clock   "MOS_A_L"   as C1 with period 50 pulse 15 offset 10
+binary  "Binary"  as B
+concise "Concise" as C
+robust  "Robust"  as R
+analog  "Analog"  as A
+
+
+@0
+C is Idle
+R is Idle
+A is 0
+
+@100
+B is high
+C is Waiting
+R is Processing
+A is 3
+
+@300
+R is Waiting
+A is 1
+@enduml

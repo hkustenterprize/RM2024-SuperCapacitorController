@@ -1,0 +1,49 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.elf
+*.bin
+*.lst
+*.rd
+*.map
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.user
+*.jdebug.user
+*.jdebug
+
+# Text editor configuration
+.cache/
+.idea/
+.vscode/
+.settings/
+.history/
+*.sublime-workspace
+
+# Patch cache
+*.orig
+
+# Build directory
+build/
+compile_commands.json
+.ccls-cache
+.vagrant
+
+# cubeMX files
+.mxproject
+.project
+/cmake-build-debug
