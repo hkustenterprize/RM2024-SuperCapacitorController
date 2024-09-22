@@ -62,3 +62,18 @@ SuperCap-F3.mk                                    ----队内通用MakeFile库
 
 ## 开源说明
 本项目通过GPL3.0协议开源
+
+## PCB项目说明
+硬件部分使用KiCAD设计。
+
+Github上在线预览：使用[KiCanvas](https://kicanvas.org/)
+
+上板原理图：[预览](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fhkustenterprize%2FRM2024-SuperCapacitorController%2Fblob%2Fmaster%2Fhardware%2FSuperCap2024_Control_V1.1R_F3_ISOPWR%2FSuperCap2024Control_V1.1R_F3_ISOPWR.kicad_sch)
+
+上板PCB：[预览](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fhkustenterprize%2FRM2024-SuperCapacitorController%2Fblob%2Fmaster%2Fhardware%2FSuperCap2024_Control_V1.1R_F3_ISOPWR%2FSuperCap2024Control_V1.1R_F3_ISOPWR.kicad_pcb)
+
+下板原理图：[预览](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fhkustenterprize%2FRM2024-SuperCapacitorController%2Fblob%2Fmaster%2Fhardware%2FSuperCap2024_Power_V1.2R%2FSuperCap2024V1.2R_Power.kicad_sch)
+
+下板PCB：[预览](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fhkustenterprize%2FRM2024-SuperCapacitorController%2Fblob%2Fmaster%2Fhardware%2FSuperCap2024_Power_V1.2R%2FSuperCap2024V1.2R_Power.kicad_pcb)
+
+
