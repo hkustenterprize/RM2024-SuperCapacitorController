@@ -338,7 +338,7 @@ static void handleErrorState()
 {
     /* Under Voltage */
 #ifdef CALIBRATION_MODE
-    if (ProcessedSampleData::processedSampleData.vASide < 12.0f && ProcessedSampleData::processedSampleData.vBSide < 12.0f)
+    if (SampleManager::ProcessedData::processedData.vASide < 12.0f && SampleManager::ProcessedData::processedData.vBSide < 12.0f)
     {
         ControlData::controlData.enableOutput = false;
         errorCheckData.currentError |= ERROR_UNDER_VOLTAGE;
