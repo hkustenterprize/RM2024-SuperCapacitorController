@@ -400,14 +400,27 @@ static void handleErrorState()
     }
     else
     {
-        if (SampleManager::ProcessedData::processedData.vASide > 27.0f)
-            errorCheckData.overVoltageCnt += 1;
-        else if (SampleManager::ProcessedData::processedData.vASide > 28.0f)
-            errorCheckData.overVoltageCnt += 5;
+        // if (SampleManager::ProcessedData::processedData.vASide > 27.0f)
+        //     errorCheckData.overVoltageCnt += 1;
+        // else if (SampleManager::ProcessedData::processedData.vASide > 28.0f)
+        //     errorCheckData.overVoltageCnt += 5;
+        // else if (SampleManager::ProcessedData::processedData.vASide > 29.0f)
+        //     errorCheckData.overVoltageCnt += 25;
+        // else if (SampleManager::ProcessedData::processedData.vASide > 30.0f)
+        //     errorCheckData.overVoltageCnt += 125;
+        // else
+        //     errorCheckData.overVoltageCnt = 0;
+
+        // 此处修复上述旧代码的逻辑性错误，上述代码只会进入第一个if，导致更高电压更快关断的逻辑从不触发。感谢 至诚电控 等群友指出本错误。
+        
+        if (SampleManager::ProcessedData::processedData.vASide > 30.0f)
+            errorCheckData.overVoltageCnt += 125;
         else if (SampleManager::ProcessedData::processedData.vASide > 29.0f)
             errorCheckData.overVoltageCnt += 25;
-        else if (SampleManager::ProcessedData::processedData.vASide > 30.0f)
-            errorCheckData.overVoltageCnt += 125;
+        else if (SampleManager::ProcessedData::processedData.vASide > 28.0f)
+            errorCheckData.overVoltageCnt += 5;
+        else if (SampleManager::ProcessedData::processedData.vASide > 27.0f)
+            errorCheckData.overVoltageCnt += 1;
         else
             errorCheckData.overVoltageCnt = 0;
 
